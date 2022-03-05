@@ -48,7 +48,7 @@ namespace InvoiceCalculator
             this.discountPercentText.ReadOnly = true;
             this.discountPercentText.Size = new System.Drawing.Size(100, 23);
             this.discountPercentText.TabIndex = 10;
-            this.discountPercentText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.discountPercentText.TextChanged += new System.EventHandler(this.discountPercentText_TextChanged);
             // 
             // subtotalLabel
             // 
