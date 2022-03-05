@@ -76,7 +76,7 @@ namespace InvoiceCalculator
             this.subtotalText.Name = "subtotalText";
             this.subtotalText.Size = new System.Drawing.Size(100, 23);
             this.subtotalText.TabIndex = 1;
-            this.subtotalText.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.subtotalText.TextChanged += new System.EventHandler(this.subtotalText_TextChanged);
             // 
             // discountAmountLabel
             // 

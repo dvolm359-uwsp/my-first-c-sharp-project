@@ -31,7 +31,7 @@ namespace InvoiceCalculator
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void subtotalText_TextChanged(object sender, EventArgs e)
         {
 
         }
