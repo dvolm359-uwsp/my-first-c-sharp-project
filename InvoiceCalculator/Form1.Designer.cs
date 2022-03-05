@@ -114,7 +114,7 @@ namespace InvoiceCalculator
             this.totalText.ReadOnly = true;
             this.totalText.Size = new System.Drawing.Size(100, 23);
             this.totalText.TabIndex = 6;
-            this.totalText.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.totalText.TextChanged += new System.EventHandler(this.totalText_TextChanged);
             // 
             // calculateButton
             // 
