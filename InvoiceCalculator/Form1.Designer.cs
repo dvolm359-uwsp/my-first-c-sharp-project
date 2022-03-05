@@ -30,7 +30,6 @@ namespace InvoiceCalculator
         private void InitializeComponent()
         {
             this.discountPercentText = new System.Windows.Forms.TextBox();
-            this.subtotalLabel = new System.Windows.Forms.Label();
             this.discountPercentLabel = new System.Windows.Forms.Label();
             this.subtotalText = new System.Windows.Forms.TextBox();
             this.discountAmountLabel = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@ namespace InvoiceCalculator
             this.totalText = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.subtotalLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // discountPercentText
@@ -49,16 +49,6 @@ namespace InvoiceCalculator
             this.discountPercentText.Size = new System.Drawing.Size(100, 23);
             this.discountPercentText.TabIndex = 10;
             this.discountPercentText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // subtotalLabel
-            // 
-            this.subtotalLabel.AutoSize = true;
-            this.subtotalLabel.Location = new System.Drawing.Point(24, 40);
-            this.subtotalLabel.Name = "subtotalLabel";
-            this.subtotalLabel.Size = new System.Drawing.Size(54, 15);
-            this.subtotalLabel.TabIndex = 0;
-            this.subtotalLabel.Text = "&Subtotal:";
-            this.subtotalLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // discountPercentLabel
             // 
@@ -136,6 +126,16 @@ namespace InvoiceCalculator
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.button2_Click);
             // 
+            // subtotalLabel
+            // 
+            this.subtotalLabel.AutoSize = true;
+            this.subtotalLabel.Location = new System.Drawing.Point(24, 40);
+            this.subtotalLabel.Name = "subtotalLabel";
+            this.subtotalLabel.Size = new System.Drawing.Size(54, 15);
+            this.subtotalLabel.TabIndex = 0;
+            this.subtotalLabel.Text = "&Subtotal:";
+            this.subtotalLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -162,7 +162,6 @@ namespace InvoiceCalculator
         #endregion
 
         private System.Windows.Forms.TextBox discountPercentText;
-        private System.Windows.Forms.Label subtotalLabel;
         private System.Windows.Forms.Label discountPercentLabel;
         private System.Windows.Forms.TextBox subtotalText;
         private System.Windows.Forms.Label discountAmountLabel;
@@ -171,6 +170,7 @@ namespace InvoiceCalculator
         private System.Windows.Forms.TextBox totalText;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label subtotalLabel;
     }
 }
 
