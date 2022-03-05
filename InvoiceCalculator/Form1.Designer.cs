@@ -29,127 +29,128 @@ namespace InvoiceCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.discountPercentText = new System.Windows.Forms.TextBox();
+            this.subtotalLabel = new System.Windows.Forms.Label();
+            this.discountPercentLabel = new System.Windows.Forms.Label();
+            this.subtotalText = new System.Windows.Forms.TextBox();
+            this.discountAmountLabel = new System.Windows.Forms.Label();
+            this.discountAmountText = new System.Windows.Forms.TextBox();
+            this.totalLabel = new System.Windows.Forms.Label();
+            this.totalText = new System.Windows.Forms.TextBox();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // discountPercentText
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.discountPercentText.Location = new System.Drawing.Point(151, 68);
+            this.discountPercentText.Name = "discountPercentText";
+            this.discountPercentText.ReadOnly = true;
+            this.discountPercentText.Size = new System.Drawing.Size(100, 23);
+            this.discountPercentText.TabIndex = 10;
+            this.discountPercentText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
+            // subtotalLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "&Subtotal:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.subtotalLabel.AutoSize = true;
+            this.subtotalLabel.Location = new System.Drawing.Point(24, 40);
+            this.subtotalLabel.Name = "subtotalLabel";
+            this.subtotalLabel.Size = new System.Drawing.Size(54, 15);
+            this.subtotalLabel.TabIndex = 0;
+            this.subtotalLabel.Text = "&Subtotal:";
+            this.subtotalLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // discountPercentLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Discount Percent:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.discountPercentLabel.AutoSize = true;
+            this.discountPercentLabel.Location = new System.Drawing.Point(24, 76);
+            this.discountPercentLabel.Name = "discountPercentLabel";
+            this.discountPercentLabel.Size = new System.Drawing.Size(100, 15);
+            this.discountPercentLabel.TabIndex = 3;
+            this.discountPercentLabel.Text = "Discount Percent:";
+            this.discountPercentLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox2
+            // subtotalText
             // 
-            this.textBox2.Location = new System.Drawing.Point(151, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.subtotalText.Location = new System.Drawing.Point(151, 37);
+            this.subtotalText.Name = "subtotalText";
+            this.subtotalText.Size = new System.Drawing.Size(100, 23);
+            this.subtotalText.TabIndex = 1;
+            this.subtotalText.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label3
+            // discountAmountLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Discount Amount:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.discountAmountLabel.AutoSize = true;
+            this.discountAmountLabel.Location = new System.Drawing.Point(24, 110);
+            this.discountAmountLabel.Name = "discountAmountLabel";
+            this.discountAmountLabel.Size = new System.Drawing.Size(104, 15);
+            this.discountAmountLabel.TabIndex = 5;
+            this.discountAmountLabel.Text = "Discount Amount:";
+            this.discountAmountLabel.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // discountAmountText
             // 
-            this.textBox3.Location = new System.Drawing.Point(151, 107);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.discountAmountText.Location = new System.Drawing.Point(151, 107);
+            this.discountAmountText.Name = "discountAmountText";
+            this.discountAmountText.ReadOnly = true;
+            this.discountAmountText.Size = new System.Drawing.Size(100, 23);
+            this.discountAmountText.TabIndex = 4;
+            this.discountAmountText.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // label4
+            // totalLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 156);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Total:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.Location = new System.Drawing.Point(24, 156);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(35, 15);
+            this.totalLabel.TabIndex = 7;
+            this.totalLabel.Text = "Total:";
+            this.totalLabel.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox4
+            // totalText
             // 
-            this.textBox4.Location = new System.Drawing.Point(151, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.totalText.Location = new System.Drawing.Point(151, 153);
+            this.totalText.Name = "totalText";
+            this.totalText.ReadOnly = true;
+            this.totalText.Size = new System.Drawing.Size(100, 23);
+            this.totalText.TabIndex = 6;
+            this.totalText.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // button1
+            // calculateButton
             // 
-            this.button1.Location = new System.Drawing.Point(106, 207);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "&Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.calculateButton.Location = new System.Drawing.Point(106, 207);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.TabIndex = 8;
+            this.calculateButton.Text = "&Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // exitButton
             // 
-            this.button2.Location = new System.Drawing.Point(212, 207);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "E&xit";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.exitButton.Location = new System.Drawing.Point(212, 207);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 9;
+            this.exitButton.Text = "E&xit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 263);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.totalLabel);
+            this.Controls.Add(this.totalText);
+            this.Controls.Add(this.discountAmountLabel);
+            this.Controls.Add(this.discountAmountText);
+            this.Controls.Add(this.discountPercentLabel);
+            this.Controls.Add(this.subtotalText);
+            this.Controls.Add(this.subtotalLabel);
+            this.Controls.Add(this.discountPercentText);
             this.Name = "Form1";
             this.Text = "Invoice Total";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -160,16 +161,16 @@ namespace InvoiceCalculator
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox discountPercentText;
+        private System.Windows.Forms.Label subtotalLabel;
+        private System.Windows.Forms.Label discountPercentLabel;
+        private System.Windows.Forms.TextBox subtotalText;
+        private System.Windows.Forms.Label discountAmountLabel;
+        private System.Windows.Forms.TextBox discountAmountText;
+        private System.Windows.Forms.Label totalLabel;
+        private System.Windows.Forms.TextBox totalText;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
