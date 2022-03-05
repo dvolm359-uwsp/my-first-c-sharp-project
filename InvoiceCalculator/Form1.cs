@@ -41,7 +41,7 @@ namespace InvoiceCalculator
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void discountAmountText_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -95,7 +95,7 @@ namespace InvoiceCalculator
             this.discountAmountText.ReadOnly = true;
             this.discountAmountText.Size = new System.Drawing.Size(100, 23);
             this.discountAmountText.TabIndex = 4;
-            this.discountAmountText.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.discountAmountText.TextChanged += new System.EventHandler(this.discountAmountText_TextChanged);
             // 
             // totalLabel
             // 
