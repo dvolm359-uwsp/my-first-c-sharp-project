@@ -58,7 +58,7 @@ namespace InvoiceCalculator
             this.subtotalLabel.Size = new System.Drawing.Size(54, 15);
             this.subtotalLabel.TabIndex = 0;
             this.subtotalLabel.Text = "&Subtotal:";
-            this.subtotalLabel.Click += new System.EventHandler(this.label1_Click);
+            this.subtotalLabel.Click += new System.EventHandler(this.subtotalLabel_Click);
             // 
             // discountPercentLabel
             // 
@@ -68,7 +68,7 @@ namespace InvoiceCalculator
             this.discountPercentLabel.Size = new System.Drawing.Size(100, 15);
             this.discountPercentLabel.TabIndex = 3;
             this.discountPercentLabel.Text = "Discount Percent:";
-            this.discountPercentLabel.Click += new System.EventHandler(this.label2_Click);
+            this.discountPercentLabel.Click += new System.EventHandler(this.discountPercentLabel_Click);
             // 
             // subtotalText
             // 
@@ -86,7 +86,7 @@ namespace InvoiceCalculator
             this.discountAmountLabel.Size = new System.Drawing.Size(104, 15);
             this.discountAmountLabel.TabIndex = 5;
             this.discountAmountLabel.Text = "Discount Amount:";
-            this.discountAmountLabel.Click += new System.EventHandler(this.label3_Click);
+            this.discountAmountLabel.Click += new System.EventHandler(this.discountAmountLabel_Click);
             // 
             // discountAmountText
             // 
@@ -105,7 +105,7 @@ namespace InvoiceCalculator
             this.totalLabel.Size = new System.Drawing.Size(35, 15);
             this.totalLabel.TabIndex = 7;
             this.totalLabel.Text = "Total:";
-            this.totalLabel.Click += new System.EventHandler(this.label4_Click);
+            this.totalLabel.Click += new System.EventHandler(this.totalLabel_Click);
             // 
             // totalText
             // 
@@ -124,7 +124,7 @@ namespace InvoiceCalculator
             this.calculateButton.TabIndex = 8;
             this.calculateButton.Text = "&Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
-            this.calculateButton.Click += new System.EventHandler(this.button1_Click);
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // exitButton
             // 
@@ -134,7 +134,7 @@ namespace InvoiceCalculator
             this.exitButton.TabIndex = 9;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.button2_Click);
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 

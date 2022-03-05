@@ -21,12 +21,12 @@ namespace InvoiceCalculator
         {
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void subtotalLabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void discountPercentLabel_Click(object sender, EventArgs e)
         {
 
         }
@@ -36,7 +36,7 @@ namespace InvoiceCalculator
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void discountAmountLabel_Click(object sender, EventArgs e)
         {
 
         }
@@ -46,7 +46,7 @@ namespace InvoiceCalculator
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void totalLabel_Click(object sender, EventArgs e)
         {
 
         }
@@ -56,7 +56,7 @@ namespace InvoiceCalculator
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e)
         {
 
         }
@@ -66,7 +66,7 @@ namespace InvoiceCalculator
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void calculateButton_Click(object sender, EventArgs e)
         {
             
         }
