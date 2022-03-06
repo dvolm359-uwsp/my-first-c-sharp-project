@@ -40,8 +40,8 @@ namespace InvoiceCalculator
             this.totalText = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.subtotalErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.subtotalErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // discountPercentText
@@ -139,9 +139,9 @@ namespace InvoiceCalculator
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // errorProvider1
+            // subtotalErrorProvider
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.subtotalErrorProvider.ContainerControl = this;
             // 
             // Form1
             // 
@@ -161,7 +161,7 @@ namespace InvoiceCalculator
             this.Name = "Form1";
             this.Text = "Invoice Total";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subtotalErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,7 +179,7 @@ namespace InvoiceCalculator
         private System.Windows.Forms.TextBox totalText;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider subtotalErrorProvider;
     }
 }
 
