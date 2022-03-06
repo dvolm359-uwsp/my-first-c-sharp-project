@@ -29,4 +29,4 @@ open-web:
 
 .PHONY: zip
 zip:
-	cd .. && zip InvoiceCalculator.zip InvoiceCalculator && mv InvoiceCalculator.zip ~/Desktop/Volm.David.CIS-340.InvoiceCalculator.zip
+	cd .. && zip -9 -r InvoiceCalculator.zip InvoiceCalculator && mv InvoiceCalculator.zip ~/Desktop/Volm.David.CIS-340.InvoiceCalculator.zip
