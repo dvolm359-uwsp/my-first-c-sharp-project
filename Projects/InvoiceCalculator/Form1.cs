@@ -68,7 +68,9 @@ namespace InvoiceCalculator
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            subtotalErrorProvider.SetError(subtotalText, "Please enter your Name");
             MessageBox.Show("Please enter a value to textBox1!");
+            MessageBox.Show($"Current value: {subtotalText.Text}");
         }
     }
 }
