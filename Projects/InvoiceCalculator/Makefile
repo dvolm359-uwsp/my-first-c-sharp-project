@@ -25,3 +25,8 @@ run: container
 .PHONY: open-web
 open-web:
 	open "http://localhost:8080/vnc_lite.html"
+
+
+.PHONY: zip
+zip:
+	cd .. && zip InvoiceCalculator.zip InvoiceCalculator && mv InvoiceCalculator.zip ~/Desktop/Volm.David.CIS-340.InvoiceCalculator.zip
