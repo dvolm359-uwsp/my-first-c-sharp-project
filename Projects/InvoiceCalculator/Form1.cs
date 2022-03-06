@@ -68,7 +68,7 @@ namespace InvoiceCalculator
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Please enter a value to textBox1!");
         }
     }
 }
