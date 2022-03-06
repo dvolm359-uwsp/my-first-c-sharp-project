@@ -25,6 +25,22 @@ RUN apt install -y \
     mono-complete \
 ;
 
+## fluxbox
+RUN apt-get update && apt-get -y install xvfb x11vnc wget \
+    supervisor fluxbox net-tools python-numpy \
+    chromium-browser firefox vim
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+WORKDIR /usr/src
+RUN git clone https://github.com/novnc/noVNC.git
+WORKDIR /usr/src/noVNC
+RUN git checkout tags/v1.3.0
+
+ENV DISPLAY :0
+ENV RES 1024x768x24
+EXPOSE 8080
+CMD ["/usr/bin/supervisord"]
+
 # add /usr/games to the path so we can use lolcat and cowsay
 ENV PATH=/usr/games:$PATH
 
@@ -51,12 +67,16 @@ RUN cd /root/.zplug && tar xzvf jeffreytse_zsh-vi-mode.tar.gz
 # copy over .zshrc
 COPY .zshrc .
 
+
+
 # main working directory
 WORKDIR /usr/src
 
-
 ## COMPILE
 COPY . .
+RUN xbuild
+
+
 
 # entrypoint
-ENTRYPOINT ["/bin/zsh"]
+## ENTRYPOINT ["/bin/zsh"]
