@@ -58,7 +58,7 @@ namespace InvoiceCalculator
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void discountPercentText_TextChanged(object sender, EventArgs e)
