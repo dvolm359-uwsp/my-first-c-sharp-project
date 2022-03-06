@@ -41,15 +41,6 @@ namespace InvoiceCalculator
             this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // discountPercentText
-            // 
-            this.discountPercentText.Location = new System.Drawing.Point(151, 68);
-            this.discountPercentText.Name = "discountPercentText";
-            this.discountPercentText.ReadOnly = true;
-            this.discountPercentText.Size = new System.Drawing.Size(100, 23);
-            this.discountPercentText.TabIndex = 10;
-            this.discountPercentText.TextChanged += new System.EventHandler(this.discountPercentText_TextChanged);
-            // 
             // subtotalLabel
             // 
             this.subtotalLabel.AutoSize = true;
@@ -60,16 +51,6 @@ namespace InvoiceCalculator
             this.subtotalLabel.Text = "&Subtotal:";
             this.subtotalLabel.Click += new System.EventHandler(this.subtotalLabel_Click);
             // 
-            // discountPercentLabel
-            // 
-            this.discountPercentLabel.AutoSize = true;
-            this.discountPercentLabel.Location = new System.Drawing.Point(24, 76);
-            this.discountPercentLabel.Name = "discountPercentLabel";
-            this.discountPercentLabel.Size = new System.Drawing.Size(100, 15);
-            this.discountPercentLabel.TabIndex = 3;
-            this.discountPercentLabel.Text = "Discount Percent:";
-            this.discountPercentLabel.Click += new System.EventHandler(this.discountPercentLabel_Click);
-            // 
             // subtotalText
             // 
             this.subtotalText.Location = new System.Drawing.Point(151, 37);
@@ -78,13 +59,32 @@ namespace InvoiceCalculator
             this.subtotalText.TabIndex = 1;
             this.subtotalText.TextChanged += new System.EventHandler(this.subtotalText_TextChanged);
             // 
+            // discountPercentLabel
+            // 
+            this.discountPercentLabel.AutoSize = true;
+            this.discountPercentLabel.Location = new System.Drawing.Point(24, 76);
+            this.discountPercentLabel.Name = "discountPercentLabel";
+            this.discountPercentLabel.Size = new System.Drawing.Size(100, 15);
+            this.discountPercentLabel.TabIndex = 2;
+            this.discountPercentLabel.Text = "Discount Percent:";
+            this.discountPercentLabel.Click += new System.EventHandler(this.discountPercentLabel_Click);
+            // 
+            // discountPercentText
+            // 
+            this.discountPercentText.Location = new System.Drawing.Point(151, 68);
+            this.discountPercentText.Name = "discountPercentText";
+            this.discountPercentText.ReadOnly = true;
+            this.discountPercentText.Size = new System.Drawing.Size(100, 23);
+            this.discountPercentText.TabIndex = 3;
+            this.discountPercentText.TextChanged += new System.EventHandler(this.discountPercentText_TextChanged);
+            // 
             // discountAmountLabel
             // 
             this.discountAmountLabel.AutoSize = true;
             this.discountAmountLabel.Location = new System.Drawing.Point(24, 110);
             this.discountAmountLabel.Name = "discountAmountLabel";
             this.discountAmountLabel.Size = new System.Drawing.Size(104, 15);
-            this.discountAmountLabel.TabIndex = 5;
+            this.discountAmountLabel.TabIndex = 4;
             this.discountAmountLabel.Text = "Discount Amount:";
             this.discountAmountLabel.Click += new System.EventHandler(this.discountAmountLabel_Click);
             // 
@@ -94,7 +94,7 @@ namespace InvoiceCalculator
             this.discountAmountText.Name = "discountAmountText";
             this.discountAmountText.ReadOnly = true;
             this.discountAmountText.Size = new System.Drawing.Size(100, 23);
-            this.discountAmountText.TabIndex = 4;
+            this.discountAmountText.TabIndex = 5;
             this.discountAmountText.TextChanged += new System.EventHandler(this.discountAmountText_TextChanged);
             // 
             // totalLabel
@@ -103,7 +103,7 @@ namespace InvoiceCalculator
             this.totalLabel.Location = new System.Drawing.Point(24, 156);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(35, 15);
-            this.totalLabel.TabIndex = 7;
+            this.totalLabel.TabIndex = 6;
             this.totalLabel.Text = "Total:";
             this.totalLabel.Click += new System.EventHandler(this.totalLabel_Click);
             // 
@@ -113,7 +113,7 @@ namespace InvoiceCalculator
             this.totalText.Name = "totalText";
             this.totalText.ReadOnly = true;
             this.totalText.Size = new System.Drawing.Size(100, 23);
-            this.totalText.TabIndex = 6;
+            this.totalText.TabIndex = 7;
             this.totalText.TextChanged += new System.EventHandler(this.totalText_TextChanged);
             // 
             // calculateButton
