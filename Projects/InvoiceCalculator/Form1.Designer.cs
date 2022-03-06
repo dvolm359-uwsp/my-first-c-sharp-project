@@ -1,4 +1,14 @@
-﻿
+﻿/* ================================================
+ * @author     David Volm aka VOLMINATOR aka daXXog
+ * @date       Sun Mar  6 13:09:22 CST 2022
+ * @school     UWSP
+ * @class      CIS 340
+ * @section    01
+ * @assignment 04
+ * @professor  Hardeep Kaur Dhalla
+ * @licence    MIT
+ * ===============================================*/
+
 namespace InvoiceCalculator
 {
     partial class Form1

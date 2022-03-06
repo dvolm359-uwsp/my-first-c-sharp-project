@@ -1,4 +1,15 @@
-﻿using System;
+﻿/* ================================================
+ * @author     David Volm aka VOLMINATOR aka daXXog
+ * @date       Sun Mar  6 13:09:22 CST 2022
+ * @school     UWSP
+ * @class      CIS 340
+ * @section    01
+ * @assignment 04
+ * @professor  Hardeep Kaur Dhalla
+ * @licence    MIT
+ * ===============================================*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +23,8 @@ namespace InvoiceCalculator
 {
     public partial class Form1 : Form
     {
+        private readonly InvoiceCalculator invoiceCalculator = new InvoiceCalculator();
+
         public Form1()
         {
             InitializeComponent();
@@ -33,7 +46,7 @@ namespace InvoiceCalculator
 
         private void subtotalText_TextChanged(object sender, EventArgs e)
         {
-
+            subtotalErrorProvider.SetError(subtotalText, "");
         }
 
         private void discountAmountLabel_Click(object sender, EventArgs e)
@@ -68,9 +81,16 @@ namespace InvoiceCalculator
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            subtotalErrorProvider.SetError(subtotalText, "Please enter your Name");
-            MessageBox.Show("Please enter a value to textBox1!");
-            MessageBox.Show($"Current value: {subtotalText.Text}");
+            invoiceCalculator.parseAndSetSubtotal(subtotalText.Text, () => {
+                discountPercentText.Text = invoiceCalculator.DiscountPercent;
+                discountAmountText.Text = invoiceCalculator.DiscountAmount;
+                totalText.Text = invoiceCalculator.Total;
+            }, () => {
+                subtotalErrorProvider.SetError(subtotalText, "Please enter a valid number in the text box!");
+                discountPercentText.Text = "";
+                discountAmountText.Text = "";
+                totalText.Text = "";
+            });
         }
     }
 }
