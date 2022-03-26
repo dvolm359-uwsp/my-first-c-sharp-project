@@ -6,7 +6,13 @@ namespace LocalDB_assign
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Customer c = CustomerDB.GetCustomer(1234);
+            Console.WriteLine("CustomerID");
+            Console.WriteLine(c.CustomerID);
+            Console.WriteLine("CompanyName");
+            Console.WriteLine(c.CompanyName);
+            Console.WriteLine("ContactName");
+            Console.WriteLine(c.ContactName);
         }
     }
 }
